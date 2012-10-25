@@ -1,0 +1,34 @@
+{
+  "name": "myapp",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": 
+  [
+  ],
+  "author": "",
+  "maintainers": 
+  [
+  ],
+  "contributors":
+  [
+  ],
+  "repository": 
+  {
+    "type": "git",
+    "url": ""
+  },
+  "preferGlobal": false,
+  "dependencies": 
+  {
+  },
+  "license":"",
+  "private": true,
+  "main": "./myapp.js",
+  "service":
+  {
+    "appid": "50885f24dfb556b436000018",
+    "-consumerKey": "5c28c2cbk18dak4cd7kb1dck24ef436961ac",
+    "-consumerSecret": "cec12b6cs73f0s4073sbd4as6002fe3ed65d"
+  },
+  "logfile" : "myapp.log"
+}
