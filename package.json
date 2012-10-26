@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "",
   "keywords": 
   [
@@ -23,7 +23,7 @@
   },
   "license":"",
   "private": true,
-  "main": "./myapp.js",
+  "main": "./index.js",
   "service":
   {
     "appid": "50885f24dfb556b436000018",
