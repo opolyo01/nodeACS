@@ -2,7 +2,7 @@ var sessionId,
 	util = require('util'),
 	qs = require('querystring');
 	
-
+ACS.init('', '');
 logger.setLevel('DEBUG');
 
 api.login = function(req, res, callback) {
