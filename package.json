@@ -23,7 +23,7 @@
   },
   "license":"",
   "private": true,
-  "main": "./index.js",
+  "main": "./app.js",
   "service":
   {
     "appid": "50885f24dfb556b436000018",

@@ -1,30 +1,45 @@
-[2012-10-25 22:48:05.125] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:48:05.125] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:48:05.126] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:48:05.126] [INFO] myapp - callback is function createPlace(req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      name:'Yahoo',       city:'Sunnyvale',	  state: 'CA'    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:48:05.126] [INFO] myapp - createPlace Response .. [object Object]
-[2012-10-25 22:51:26.757] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:51:26.758] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:51:26.759] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:51:26.759] [INFO] myapp - callback is function (req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      	name:'Yahoo',       	city:'Sunnyvale',	  	state: 'CA',		session_id: sessionId    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:51:26.760] [INFO] myapp - createPlace Response .. [object Object]
-[2012-10-25 22:52:27.686] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:52:27.686] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:52:27.686] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:52:27.686] [INFO] myapp - callback is function (req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      	name:'Yahoo',       	city:'Sunnyvale',	  	state: 'CA',		session_id: sessionId    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:52:27.686] [INFO] myapp - createPlace Response .. [object Object]
-[2012-10-25 22:54:46.150] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:54:46.150] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:54:46.150] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:54:46.150] [INFO] myapp - callback is function (req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      	name:'Yahoo',       	city:'Sunnyvale',	  	state: 'CA',		session_id: sessionId    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:54:46.151] [INFO] myapp - createPlace Response .. [object Object]
-[2012-10-25 22:55:31.601] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:55:31.601] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:55:31.601] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:55:31.602] [INFO] myapp - callback is function (req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      	name:'Yahoo',       	city:'Sunnyvale',	  	state: 'CA',		//session_id: sessionId    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:55:31.602] [INFO] myapp - createPlace Response .. [object Object]
-[2012-10-25 22:56:14.715] [INFO] myapp - Logging in ACS app...
-[2012-10-25 22:56:14.715] [INFO] myapp - Session ID QiEfzOmd84HeLSQvG4Etebk_ZIo
-[2012-10-25 22:56:14.715] [INFO] myapp - Response is [object Object]
-[2012-10-25 22:56:14.715] [INFO] myapp - callback is function (req, res){	logger.info('createPlace Response .. '+res);	ACS.Places.create({      	name:'Yahoo',       	city:'Sunnyvale',	  	state: 'CA',		//session_id: sessionId    }, function(data) {        res.write(JSON.stringify(data, null, 2));        res.end();    }, req, res);}
-[2012-10-25 22:56:14.715] [INFO] myapp - createPlace Response .. [object Object]
+[2012-11-11 22:01:46.980] [INFO] myapp - Session ID 73apmgDNwaeomCgYaPvDL-XOa2c
+[2012-11-11 22:01:58.398] [INFO] myapp - Session ID bSn8fCjc-uByAF7xp_aXQzpvB7A
+[2012-11-11 22:02:25.346] [INFO] myapp - Session ID Fe7n3rS4d0-8KkxkH59bMpakctE
+[2012-11-11 22:03:53.581] [INFO] myapp - Session ID ffM6CCEPQzQ0IK_SMXiOrKza1DM
+[2012-11-11 22:05:40.026] [INFO] myapp - Session ID R2-LV16PL5FW4ZGwlPgMvTMUxYw
+[2012-11-11 22:05:50.217] [INFO] myapp - Session ID R2L7iKKTsUj9IM7rFVbwE9tvGHg
+[2012-11-11 22:06:27.483] [INFO] myapp - Session ID Pn_urRB3FQh444qNmN3Tacb9On0
+[2012-11-11 22:07:32.656] [INFO] myapp - Session ID vuhda_FsyCsMJxXKz9l52SInS2A
+[2012-11-11 22:07:39.655] [INFO] myapp - Session ID gbkHqZHHgbMHDvPA85sAnUsh4co
+[2012-11-11 22:09:27.128] [INFO] myapp - Session ID T_RLD_OiAZLRWGJWsX37iBaOn5o
+[2012-11-11 22:09:31.717] [INFO] myapp - Session ID z1JJWeYKjHWuoec5jOQtPmVH8ew
+[2012-11-11 22:19:12.463] [INFO] myapp - Session ID zH5BdnzZY9U_GFAVOK5ejdM7nX4
+[2012-11-11 22:21:27.374] [INFO] myapp - Session ID oRbD5F20Z_oP-5JcQNtIJh8n_ss
+[2012-11-12 17:30:49.845] [INFO] myapp - Session ID Fwj-NT4Jau5-6qas2pnq_8bk7fI
+[2012-11-12 17:32:49.406] [INFO] myapp - Session ID mX3wEW3WcD83H6ZOzIQHqR0SMF0
+[2012-11-12 17:34:49.894] [INFO] myapp - Session ID _R1r4m6uRoSjpQ2itimAw7RqJTM
+[2012-11-12 17:44:20.853] [INFO] myapp - Session ID TVZIRyxmyTPC2J2sLlWAuisaiHI
+[2012-11-12 17:44:28.327] [INFO] myapp - Session ID 2PUwT-1RBNGpJN1HG2mHiUGhV-g
+[2012-11-12 17:45:08.021] [INFO] myapp - Session ID kQAt3cfWSo065kQKDjlDA-9qXJY
+[2012-11-12 17:46:20.417] [INFO] myapp - Session ID pQKYMJ7jPj9vd9KrovUrhJ9IIbA
+[2012-11-12 17:46:36.508] [INFO] myapp - Session ID biijpgXg2IBAIj5Hkky4H4MTKas
+[2012-11-12 17:48:29.262] [INFO] myapp - Session ID ItZBKODjy9WAOMDIAPDvsAHm78I
+[2012-11-12 21:30:12.426] [INFO] myapp - Session ID x3RmMERvMJr9b7u3rTx7Sgp7LPU
+[2012-11-12 21:30:22.114] [INFO] myapp - Session ID 7_JlQG6k6qee6_0Ke8ApKWXNf30
+[2012-11-12 21:30:27.131] [INFO] myapp - Session ID 7ArLQUUdGT-mF1cvGSdEj9IWI8w
+[2012-11-12 21:30:31.156] [INFO] myapp - Session ID tWBGERnRKltZnHp-qs-Ls55NYiA
+[2012-11-12 21:30:31.561] [INFO] myapp - Session ID NxwQFjyem-UAtFkYllAyuyS3OKU
+[2012-11-12 21:30:31.781] [INFO] myapp - Session ID 7E0OYL3DEiI9o8FvqMZbfdWtNw4
+[2012-11-12 21:32:12.815] [INFO] myapp - Session ID 9xzUMGJ_E3lKwp9VxKsiHKJYemE
+[2012-11-12 21:32:22.495] [INFO] myapp - Session ID q7fQyjuiO4-NnQUk6JABRTDiPik
+[2012-11-12 21:32:27.247] [INFO] myapp - Session ID 76Y1Nrfx0okJO-eofXCjYLy4RkQ
+[2012-11-12 21:33:17.039] [INFO] myapp - Session ID 1OBisJRFHnO-ht7AIZQzyDEf0gc
+[2012-11-12 21:37:35.837] [INFO] myapp - Session ID wSiEGlC--hTJ1yMEcXo7PtfS7-w
+[2012-11-12 21:39:35.304] [INFO] myapp - Session ID DVttdaqPp-gbCCs3H3xTRUkTYgg
+[2012-11-12 21:40:25.882] [INFO] myapp - Session ID fbo4z5b0T9dHhduFF_NVXOjoph8
+[2012-11-12 21:41:20.283] [INFO] myapp - Session ID IX58XNhEYrVQ4R3JMJ5lXqs0aJ0
+[2012-11-12 21:43:20.507] [INFO] myapp - Session ID -WWFGnCNwNacCu7GuonPOMMbqFw
+[2012-11-12 21:51:37.792] [INFO] myapp - Session ID fpbjzfyY9ZFcuqZDA6hl33bUmjo
+[2012-11-12 21:52:28.982] [INFO] myapp - Session ID pUXuX1qEygLPz-_ec4sw5phu2F0
+[2012-11-12 21:52:42.072] [INFO] myapp - Session ID 6RPyTd-eOy4SxGDLAPz4YKQMbhI
+[2012-11-12 21:52:42.095] [INFO] myapp - Session ID Odc05JI6JPfXtUOl6FYuQR0Wn9E
+[2012-11-12 21:52:42.361] [INFO] myapp - Session ID jJSdbznYAZQbzSGGhp1kDI1kwOU
+[2012-11-12 21:52:42.778] [INFO] myapp - Session ID 16CRt2QTV7ElRiPgnuKxKfuR1GY
+[2012-11-12 21:53:27.460] [INFO] myapp - Session ID gLuTPv-7GyRlJUrXthSBamTvC7A
+[2012-11-12 21:55:27.935] [INFO] myapp - Session ID 7VyZu3XSHk5i9f6SL2mB_fRSpBg

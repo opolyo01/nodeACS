@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title><%= message %></title>
+		<style>
+		label{width:80px;display:inline-block;}
+		.authButtons{margin-top:15px;margin-left:80px;}
+		#errorMessage{display:none;color:red;}
+		</style>
+    </head>
+ 
+    <body>
+        <h1>PetSquare Home</h1>
+		
+		<div id="loginPage">
+			<div id="errorMessage">
+				Wrong username or password
+			</div> 
+			<div class="row">
+				<label>Email</label><input type="text" name="email" id="email"/>
+			</div>
+			<div class="row">
+				<label>Password</label><input type="password" name="password" id="password"/>
+			</div>
+			<div class="authButtons">
+				<button id="login">Login</button>
+				<a href="/register">Register</a>
+			</div>
+		</div>
+		
+		<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+		<script>
+		YUI().use("node", "io-base", "event", function(Y) {
+			var login = Y.one("#login"),
+				errorMessage = document.getElementById("errorMessage");
+			
+			login.on("click", handleLogin);
+				
+		    function loginCallback(id, o, args) {
+		        var json = JSON.parse(o.responseText);
+				if(json.status === "success"){
+					window.location.href = "/home";
+				}
+				else{
+					errorMessage.style.display = "block";
+				}
+		    }
+			function handleLogin(evt){
+				var uri = "/login";
+				Y.on('io:complete', loginCallback, Y, ['test', 'test2']);
+				uri += "?email="+Y.one("#email").get("value");
+				uri += "&password="+Y.one("#password").get("value");
+				Y.io(uri, {method: "POST"});
+			}			
+		});
+		</script>
+    </body>
+</html>

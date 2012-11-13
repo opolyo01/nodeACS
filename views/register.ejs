@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title><%= message %></title>
+		<style>
+		label{width:80px;display:inline-block;}
+		.authButtons{margin-top:15px;margin-left:80px;}
+		#errorMessage{display:none;color:red;}
+		</style>
+    </head>
+ 
+    <body>
+        <h1>PetSquare Registration</h1>
+		
+		<div id="registration">
+			<div id="errorMessage">
+				Cannot create account
+			</div> 
+			<div class="row">
+				<label>Email</label><input type="text" name="email" id="email"/>
+			</div>
+			<div class="row">
+				<label>First Name</label><input type="text" name="firstName" id="firstName"/>
+			</div>
+			<div class="row">
+				<label>Last Name</label><input type="text" name="lastName" id="lastName"/>
+			</div>
+			<div class="row">
+				<label>Password</label><input type="password" name="password" id="password"/>
+			</div>
+			<div class="row">
+				<label>Password Confirm</label><input type="password" name="passwordConf" id="passwordConf"/>
+			</div>
+			<div class="authButtons">
+				<button id="register">Register</button>
+				<a href="/index">Home</a>
+			</div>
+		</div>
+		
+		<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+		<script>
+		YUI().use("node", "io-base", "event", function(Y) {
+			var register = Y.one("#register"),
+				errorMessage = document.getElementById("errorMessage");
+			
+			register.on("click", handleRegister);
+				
+		    function registerCallback(id, o, args) {
+		        var json = JSON.parse(o.responseText);
+				if(json.status === "success"){
+					window.location.href = "/home";
+				}
+				else{
+					errorMessage.style.display = "block";
+				}
+		    }
+			function handleRegister(evt){
+				var uri = "/registerSubmit";
+				Y.on('io:complete', registerCallback, Y, ['test', 'test2']);
+				uri += "?email="+Y.one("#email").get("value");
+				uri += "&password="+Y.one("#password").get("value");
+				uri += "&passwordConf="+Y.one("#passwordConf").get("value");
+				uri += "&firstName="+Y.one("#firstName").get("value");
+				uri += "&lastName="+Y.one("#lastName").get("value");
+				Y.io(uri, {method: "POST"});
+			}			
+		});
+		</script>
+    </body>
+</html>
