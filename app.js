@@ -2,7 +2,7 @@ var sessionId,
 	util = require('util'),
 	qs = require('querystring');
 	
-ACS.init('mrkzNrohgOs6cqPx3QWglxoLpm7DuV4r', '1Tbd1X2iqxlhcJZgw9ZSV5e6lE9Vnouk');
+ACS.init('my_oauth_key', 'my_oauth_secret');
 logger.setLevel('DEBUG');
 
 api.login = function(req, res, callback) {
